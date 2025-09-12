@@ -16,7 +16,8 @@
 
     <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&#174;?<br><br>Justifica el por qué tus tenis se <em>tienen que</em> ir y tú puedes ser uno de los diez afortunados ganadores.</p>
 
-    <p>Información del Participante</p>
+    <fieldset>
+    <legend><p>Información del Participante</p></legend>
     <form action="http://52.43.117.247/neo/classroom/tw/concurso.php" method="post">
     <ul>
     <li>Nombre: <input type="text" name="name"></li>
@@ -27,10 +28,10 @@
       <textarea name="_" rows="4" cols="60"
         maxlength="_" placeholder="no mas de 4 caracteres"></textarea></li>
     </ul>
-        
+    </fieldset>
+    <fieldset>
+      <legend><h2>Diseña tus Mike personalizados:</h2></legend>
     
-    <h2>Diseña tus Mike personalizados:</h2>
-
     <p>Diseño personalizado del Tenis</p>
 
     <p>Color <em>(escoge uno)</em>:</p>
@@ -56,14 +57,28 @@
       <li><input type="checkbox" name="features[]" value="laces"></li>
       <li>WiFi integrado</li>
       </ul>
-
-    <p>Talla</p>
+      </fieldset>
+<fieldset>
+    <legend><p>Talla</p></legend>
     <p>Las medidas reflejan el estándar masculino:</p>
-    
+      <select name="size" >
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+    </select>
+
+
     <p>
-      <input type="submit">
+      <input type="submit" title="chidos mis tenis">
       <input type="reset">
     </p>
 </form>
+</fieldset>
   </body>
 </html>
